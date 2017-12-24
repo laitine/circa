@@ -322,8 +322,10 @@ $(() => {
     .to(circa39, 0, { attr:{cx:'50%'} })
     .to(circa40, 0, { attr:{cx:'50%'} })
     // Phase 12
+
+    // Turn horizontal
   
-    // Combine as one circle?
+    // Combine as one circle
 
     // Creata a circle from circles?
 
