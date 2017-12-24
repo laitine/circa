@@ -2,10 +2,12 @@ import * as $ from 'jquery';
 import { TimelineMax } from 'gsap';
 
 $(() => {
-  const tl = new TimelineMax({onComplete: () => {
-    this.restart()
+  const tl1 = new TimelineMax({
+    onComplete: () => {
+      this.restart();
   }});
   const logo = $('#logo');
+  const circa = $('.circa');
   const circa1 = $('#circa1');
   const circa2 = $('#circa2');
   const circa3 = $('#circa3');
@@ -47,8 +49,13 @@ $(() => {
   const circa39 = $('#circa39');
   const circa40 = $('#circa40');
 
+  /*const tl2 = new TimelineMax({ paused: true });
+  circa.each((index, elem) => {
+    tl2.to(elem, 3, { attr:{r:555} });
+  });*/
+
   // Phase 1
-  tl.to(circa1, 20, { attr:{r:160} }, 0)
+  tl1.to(circa1, 20, { attr:{r:160} }, 0)
     .to(circa2, 20, { attr:{r:140} }, 0)
     .to(circa3, 20, { attr:{r:120} }, 0)
     .to(circa4, 20, { attr:{r:100} }, 0)
@@ -104,7 +111,7 @@ $(() => {
     .to(logo, 89, { scale:1.4, transformOrigin:'50% 50%' }, 'end1')
     .to(logo, 1, { opacity: 0 })
     // Phase 3
-    .to(circa1, 1, { attr:{cx:'40%', cy:'-5%', r:120} })
+    tl1.to(circa1, 1, { attr:{cx:'40%', cy:'-5%', r:120} })
     .to(circa2, 1, { attr:{cx:'35%', cy:'0%', r:120} })
     .to(circa3, 1, { attr:{cx:'30%', cy:'5%', r:120} })
     .to(circa4, 1, { attr:{cx:'25%', cy:'10%', r:120} })
@@ -147,7 +154,7 @@ $(() => {
     .to(circa39, 1, { attr:{cx:'65%', cy:'100%', r:120} })
     .to(circa40, 1, { attr:{cx:'60%', cy:'105%', r:120} })
     // Phase 6
-    tl.to(circa1, .5, { fill: '#00A7E0' })
+    .to(circa1, .5, { fill: '#00A7E0' })
     .to(circa1, 0, { fill: 'transparent' })
     .to(circa2, .5, { fill: '#00A7E0' })
     .to(circa2, 0, { fill: 'transparent' })
@@ -228,7 +235,7 @@ $(() => {
     .to(circa40, .5, { fill: '#00A7E0' })
     .to(circa40, 0, { fill: 'transparent' })
     // Phase 7
-    .to(circa1, .5, { attr:{cx:'25%', cy:'-5%'} })
+    tl1.to(circa1, .5, { attr:{cx:'25%', cy:'-5%'} })
     .to(circa2, .5, { attr:{cx:'25%', cy:'0%'} })
     .to(circa3, .5, { attr:{cx:'25%', cy:'5%'} })
     .to(circa4, .5, { attr:{cx:'25%', cy:'10%'} })
@@ -320,10 +327,14 @@ $(() => {
     .to(circa37, 0, { attr:{cx:'50%'} })
     .to(circa38, 0, { attr:{cx:'50%'} })
     .to(circa39, 0, { attr:{cx:'50%'} })
-    .to(circa40, 0, { attr:{cx:'50%'} })
+    .to(circa40, 0, { attr:{cx:'50%'} });
     // Phase 12
+    //tl1.add('end3', 10)
+    //tl1.add(tl2.tweenFromTo(0, tl2.duration()), 'end3');
 
-    // Turn horizontal
+    // Turn pipe horizontal
+
+    // Increase circle size
   
     // Combine as one circle
 
