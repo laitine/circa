@@ -10,11 +10,13 @@ SVG shape animation based on [Greensock](https://greensock.com/).
 * [Yarn](https://yarnpkg.com)
 
 1. Install dependencies
-``
+
+```
 yarn
-``
+```
 
 2. Run dev environment
-``
+
+```
 gulp
-``
+```
