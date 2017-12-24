@@ -275,12 +275,12 @@ $(() => {
     .to(circa9, .5, { attr:{cx:'25%', cy:'-25%'} })
     .to(circa8, .5, { attr:{cx:'25%', cy:'-25%'} })
     .to(circa7, .5, { attr:{cx:'25%', cy:'-25%'} })
-    .to(circa6, .5, { attr:{cx:'25%', cy:'-25%'} })
-    .to(circa5, .5, { attr:{cx:'25%', cy:'-25%'} })
-    .to(circa4, .5, { attr:{cx:'25%', cy:'-25%'} })
-    .to(circa3, .5, { attr:{cx:'25%', cy:'-25%'} })
-    .to(circa2, .5, { attr:{cx:'25%', cy:'-25%'} })
-    .to(circa1, .5, { attr:{cx:'25%', cy:'-25%'} })
+    .to(circa6, .5, { attr:{cx:'25%', cy:'-30%'} })
+    .to(circa5, .5, { attr:{cx:'25%', cy:'-35%'} })
+    .to(circa4, .5, { attr:{cx:'25%', cy:'-40%'} })
+    .to(circa3, .5, { attr:{cx:'25%', cy:'-45%'} })
+    .to(circa2, .5, { attr:{cx:'25%', cy:'-50%'} })
+    .to(circa1, .5, { attr:{cx:'25%', cy:'-55%'} })
     .to(circa10, 0, { attr:{cx:'50%'} })
     .to(circa10, .5, { attr:{cy:'-10%' } })
     .to(circa9, 0, { attr:{cx:'50%'} })
@@ -301,10 +301,10 @@ $(() => {
     .to(circa34, .5, { attr:{cx:'75%', cy:'125%'} })
     .to(circa35, .5, { attr:{cx:'75%', cy:'125%'} })
     .to(circa36, .5, { attr:{cx:'75%', cy:'125%'} })
-    .to(circa37, .5, { attr:{cx:'75%', cy:'125%'} })
-    .to(circa38, .5, { attr:{cx:'75%', cy:'125%'} })
-    .to(circa39, .5, { attr:{cx:'75%', cy:'125%'} })
-    .to(circa40, .5, { attr:{cx:'75%', cy:'125%'} })
+    .to(circa37, .5, { attr:{cx:'75%', cy:'130%'} })
+    .to(circa38, .5, { attr:{cx:'75%', cy:'135%'} })
+    .to(circa39, .5, { attr:{cx:'75%', cy:'140%'} })
+    .to(circa40, .5, { attr:{cx:'75%', cy:'145%'} })
     .to(circa31, 0, { attr:{cx:'50%'} })
     .to(circa31, .5, { attr:{cy:'95%' } })
     .to(circa32, 0, { attr:{cx:'50%'} })
@@ -322,10 +322,10 @@ $(() => {
     .to(circa39, 0, { attr:{cx:'50%'} })
     .to(circa40, 0, { attr:{cx:'50%'} })
     // Phase 12
+  
+    // Combine as one circle?
 
-    // Combine as one circle
-
-    // Creata a circle from circles
+    // Creata a circle from circles?
 
     // Send circles off to random direction
 
