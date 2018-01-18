@@ -5,12 +5,12 @@
   },
   "devDependencies": {
     "@types/gsap": "1.19.1",
-    "@types/jquery": "3.2.17",
-    "@types/node": "8.5.2",
-    "browser-sync": "2.21.0",
-    "browserify": "14.5.0",
+    "@types/jquery": "3.2.18",
+    "@types/node": "9.3.0",
+    "browser-sync": "2.23.5",
+    "browserify": "15.2.0",
     "gulp": "3.9.1",
-    "gulp-csso": "3.0.0",
+    "gulp-csso": "3.0.1",
     "gulp-uglify": "3.0.0",
     "gulp-util": "3.0.8",
     "tsify": "3.0.4",
@@ -24,6 +24,8 @@
   "description": "SVG animation with Greensock",
   "main": "circa.js",
   "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

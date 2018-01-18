@@ -20,3 +20,9 @@ yarn
 ```
 gulp
 ```
+
+3. Run build
+
+```
+gulp build
+```
